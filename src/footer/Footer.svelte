@@ -1,13 +1,19 @@
 <script>
-	//import Monthly from "./Monthly.svelte";
-	
+  //import Monthly from "./Monthly.svelte";
 </script>
 
-<style>
-	/* ul#menu li{
-		display : inline;
-	} */
-</style>
+<footer>
+  <h3>Welcome to SvelteKit</h3>
+  <p>Test test</p>
+</footer>
 
-<h3>Welcome to SvelteKit</h3>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<style>
+  footer {
+    background: #7c95ab;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5.5rem;
+  }
+</style>
