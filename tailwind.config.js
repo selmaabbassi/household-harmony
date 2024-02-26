@@ -20,6 +20,11 @@ export default {
           error: "#fca5a5",
         },
       },
+      "light",
+      "dark",
+      "cupcake",
+      "forest",
+      "valentine",
     ],
   },
 };
