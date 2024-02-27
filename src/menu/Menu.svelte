@@ -18,7 +18,7 @@
     <a
       class="btn btn-ghost text-xl"
       href="/"
-      on:click|preventDefault={() => (menu = 2)}>Today</a
+      on:click|preventDefault={() => (menu = 2)}>Tasks</a
     >
     <a
       class="btn btn-ghost text-xl"
