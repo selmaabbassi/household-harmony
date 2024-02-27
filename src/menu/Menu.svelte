@@ -3,6 +3,7 @@
   import Today from "./Today.svelte";
   import Weekly from "./Weekly.svelte";
   import Monthly from "./Monthly.svelte";
+  import Icon from "@iconify/svelte";
 
   export let menu = 1;
 </script>
@@ -13,22 +14,29 @@
     <a
       class="btn btn-ghost text-xl"
       href="/"
-      on:click|preventDefault={() => (menu = 1)}>Home</a
+      on:click|preventDefault={() => (menu = 1)}
+      ><Icon icon="solar:home-bold" class="big-icon" /></a
     >
     <a
       class="btn btn-ghost text-xl"
       href="/"
-      on:click|preventDefault={() => (menu = 2)}>Tasks</a
+      on:click|preventDefault={() => (menu = 2)}
+      >Tasks <Icon icon="material-symbols:task" class="big-icon" /></a
     >
     <a
       class="btn btn-ghost text-xl"
       href="/"
-      on:click|preventDefault={() => (menu = 3)}>This Week</a
+      on:click|preventDefault={() => (menu = 3)}
+      >Rewards <Icon icon="material-symbols:rewarded-ads" class="big-icon" /></a
     >
     <a
       class="btn btn-ghost text-xl"
       href="/"
-      on:click|preventDefault={() => (menu = 4)}>This Month</a
+      on:click|preventDefault={() => (menu = 4)}
+      >Household <Icon
+        icon="material-symbols:family-restroom"
+        class="big-icon"
+      /></a
     >
   </div>
   <div class="navbar-end"></div>
@@ -47,4 +55,7 @@
 {/if}
 
 <style lang="postcss">
+  div :global(.big-icon) {
+    font-size: 35px;
+  }
 </style>
