@@ -1,8 +1,8 @@
 <script>
   import Home from "./Home.svelte";
-  import Today from "./Today.svelte";
-  import Weekly from "./Weekly.svelte";
-  import Monthly from "./Monthly.svelte";
+  import Tasks from "./Tasks.svelte";
+  import Rewards from "./Rewards.svelte";
+  import Household from "./Household.svelte";
   import Icon from "@iconify/svelte";
 
   export let menu = 1;
@@ -45,11 +45,11 @@
 {#if menu === 1}
   <Home />
 {:else if menu === 2}
-  <Today />
+  <Tasks />
 {:else if menu === 3}
-  <Weekly />
+  <Rewards />
 {:else if menu === 4}
-  <Monthly />
+  <Household />
 {:else}
   <h1>Page Not Found</h1>
 {/if}
