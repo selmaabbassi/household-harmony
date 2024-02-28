@@ -5,6 +5,5 @@
 </script>
 
 <Menu />
-<Footer />
-
 <slot />
+<Footer />
