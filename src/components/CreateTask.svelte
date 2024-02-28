@@ -16,11 +16,9 @@
 </script>
 
 <div class="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="task.png" alt="Shoes" /></figure>
+  <figure><img src="create-task.svg" alt="Shoes" /></figure>
   <div class="card-body">
-    <h2 class="card-title">Tasks</h2>
-    <p>Create your tasks here!</p>
-    <div class="card-actions justify-end">
+    <div class="card-actions justify-center">
       <button class="btn" on:click={() => showDialogClick(true)}
         >Create task</button
       >
@@ -44,7 +42,9 @@
           <div class="modal-action">
             <form method="dialog">
               <button class="btn">Close</button>
-              <button class="btn" on:click={() => onSubmit()}>Submit</button>
+              <button class="btn btn-primary" on:click={() => onSubmit()}
+                >Submit</button
+              >
             </form>
           </div>
         </div>
