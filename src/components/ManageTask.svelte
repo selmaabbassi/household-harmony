@@ -5,7 +5,7 @@
   <figure><img src="manage-task.svg" alt="task" /></figure>
   <div class="card-body">
     <div class="card-actions justify-center">
-      <a class="btn" href="/tasks/manage">Manage tasks</a>
+      <a class="btn" href="/tasks">Manage tasks</a>
     </div>
   </div>
 </div>
