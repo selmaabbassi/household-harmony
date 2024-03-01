@@ -5,13 +5,12 @@ export function getTasks() {
 }
 
 export function createTask(title, difficulty) {
-  const taskId = db.size + 1;
+  const taskId = crypto.randomUUID();
   db.set(taskId, {
     id: taskId,
     title: title,
     difficulty: difficulty,
   });
-  const task = db.get(1);
 }
 
 export function deleteTask(id) {
