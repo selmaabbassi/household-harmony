@@ -4,7 +4,7 @@
   };
 </script>
 
-<div class="card w-96 bg-base-100 shadow-xl">
+<div class="card w-42 bg-base-100 shadow-xl">
   <figure><img src="complete-task.svg" alt="task" /></figure>
   <div class="card-body">
     <div class="card-actions justify-center">
