@@ -3,11 +3,12 @@
 </script>
 
 <div class="navbar">
-  <div class="navbar-start"></div>
-  <div class="navbar-center">
+  <div class="navbar-start">
     <a class="btn btn-ghost text-xl" href="/"
-      >Home <Icon icon="solar:home-bold" class="big-icon" /></a
+      ><Icon icon="solar:home-bold" class="big-icon" /></a
     >
+  </div>
+  <div class="navbar-center">
     <a class="btn btn-ghost text-xl" href="/tasks"
       >Tasks <Icon icon="material-symbols:task" class="big-icon" /></a
     >
@@ -22,6 +23,9 @@
     >
   </div>
   <div class="navbar-end"></div>
+  <a class="btn btn-ghost text-xl" href="/mypage"
+    ><Icon icon="ph:smiley-duotone" class="big-icon" /></a
+  >
 </div>
 
 <style lang="postcss">
