@@ -1,7 +1,8 @@
 <script>
   import Icon from "@iconify/svelte";
-  import ManageTask from "../../components/ManageTask.svelte";
-  import CompleteTask from "../../components/CompleteTask.svelte";
+  import { enhance } from "$app/forms";
+  import ManageTask from "./components/ManageTask.svelte";
+  import TaskList from "./components/TaskList.svelte";
   export let data;
 </script>
 
@@ -12,53 +13,36 @@
       <div class="card-body">
         <div class="card-actions justify-center">
           <ul class="todos">
-            <form method="POST" action="?/create">
-              <div class="grid grid-cols-7 gap-1">
-                <div class="col-span-3">
-                  <input
-                    type="text"
-                    name="task-title"
-                    placeholder="Task!"
-                    class="input input-bordered w-full w-full"
-                  />
-                </div>
-                <div class="col-span-3">
-                  <select
-                    class="select select-bordered flex w-full"
-                    name="task-difficulty"
-                  >
-                    <option disabled selected>Choose difficulty</option>
-                    <option>Easy (1p)</option>
-                    <option>Medium (5p)</option>
-                    <option>Hard (10p)</option>
-                  </select>
-                </div>
-                <div class="col-span-1">
-                  <button class="btn btn-secondary flex w-full"
-                    ><Icon icon="mdi:arrow-down"></Icon></button
-                  >
-                </div>
+            <form method="POST" use:enhance action="?/create">
+              <div class="grid grid-rows-3 gap-4">
+                <input
+                  type="text"
+                  name="task-title"
+                  placeholder="Name task"
+                  class="input input-bordered w-full w-full"
+                  required
+                />
+                <select
+                  class="select select-bordered flex w-full"
+                  name="task-difficulty"
+                  required
+                >
+                  <option selected>Easy (1p)</option>
+                  <option>Medium (5p)</option>
+                  <option>Hard (10p)</option>
+                </select>
+                <button class="btn btn-secondary flex w-full"
+                  ><Icon icon="mdi:arrow-down"></Icon></button
+                >
               </div>
             </form>
-            {#each data.tasks as task (task.id)}
-              <form method="POST" action="?/delete">
-                <label class="label cursor-pointer">
-                  <input type="hidden" name="id" value={task.id} />
-                  <span class="label-text"
-                    >{task.title} - {task.difficulty}</span
-                  >
-                  <button class="btn btn-primary btn-sm"
-                    ><Icon icon="material-symbols:check"></Icon></button
-                  >
-                </label>
-              </form>
-            {/each}
           </ul>
         </div>
       </div>
     </div>
     <ManageTask />
   </div>
+  <TaskList {data} />
 </div>
 
 <style lang="postcss">
