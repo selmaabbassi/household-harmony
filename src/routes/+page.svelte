@@ -8,7 +8,7 @@
           Manage your household by completing tasks and earning rewards to
           upgrade your character!
         </p>
-        <a class="btn btn-primary" href="/mypage/avatar/create">Get Started</a>
+        <a class="btn btn-primary" href="/mypage">Get Started</a>
       </div>
     </div>
   </div>

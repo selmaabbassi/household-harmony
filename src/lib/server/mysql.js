@@ -4,11 +4,10 @@ let mysqlconn = null;
 
 export function mysqlconnFn() {
   if (!mysqlconn) {
-
     mysqlconn = mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "password",
+      password: "root",
       database: "db",
     });
   }
