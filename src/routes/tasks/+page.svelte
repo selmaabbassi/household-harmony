@@ -3,6 +3,7 @@
   import { enhance } from "$app/forms";
   import ManageTask from "./components/ManageTask.svelte";
   import TaskList from "./components/TaskList.svelte";
+  import { DIFFICULTY } from "../../enums/DifficultyType";
   export let data;
 </script>
 
@@ -27,9 +28,13 @@
                   name="task-difficulty"
                   required
                 >
-                  <option selected>Easy (1p)</option>
-                  <option>Medium (5p)</option>
-                  <option>Hard (10p)</option>
+                  <option value={DIFFICULTY.Easy.valueOf()} selected
+                    >Easy (1p)</option
+                  >
+                  <option value={DIFFICULTY.Medium.valueOf()}
+                    >Medium (5p)</option
+                  >
+                  <option value={DIFFICULTY.Hard.valueOf()}>Hard (10p)</option>
                 </select>
                 <button class="btn btn-secondary flex w-full"
                   ><Icon icon="mdi:arrow-down"></Icon></button
