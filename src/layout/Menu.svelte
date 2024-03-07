@@ -9,18 +9,9 @@
     >
   </div>
   <div class="navbar-center">
-    <a class="btn btn-ghost text-xl" href="/tasks"
-      >Tasks <Icon icon="material-symbols:task" class="big-icon" /></a
-    >
-    <a class="btn btn-ghost text-xl" href="/rewards"
-      >Rewards <Icon icon="material-symbols:rewarded-ads" class="big-icon" /></a
-    >
-    <a class="btn btn-ghost text-xl" href="/household"
-      >Household <Icon
-        icon="material-symbols:family-restroom"
-        class="big-icon"
-      /></a
-    >
+    <a class="btn btn-ghost text-xl" href="/tasks">Tasks</a>
+    <a class="btn btn-ghost text-xl" href="/rewards">Rewards</a>
+    <a class="btn btn-ghost text-xl" href="/household">Household </a>
   </div>
   <div class="navbar-end"></div>
   <a class="btn btn-ghost text-xl" href="/mypage"
