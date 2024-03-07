@@ -1,7 +1,11 @@
 <div class="container mx-auto mt-40">
   <div class="grid grid-cols-3 gap-2 content-evenly ...">
     <div class="card w-42 bg-base-100 shadow-xl">
-      <figure><img src="wizard-character.svg" alt="Create task" /></figure>
+      <a href="/mypage/create" class="hover:bg-violet-200"
+        ><figure>
+          <img src="wizard-character.svg" alt="Create task" />
+        </figure></a
+      >
       <div class="card-body items-center text-center">
         <h2 class="card-title text-2xl">Wizard</h2>
         <p>
@@ -10,8 +14,11 @@
         </p>
       </div>
     </div>
+
     <div class="card w-42 bg-base-100 shadow-xl">
-      <figure><img src="knight-character.svg" alt="Knight" /></figure>
+      <a href="/mypage/create" class="hover:bg-sky-200">
+        <figure><img src="knight-character.svg" alt="Knight" /></figure></a
+      >
       <div class="card-body items-center text-center">
         <h2 class="card-title text-2xl">Knight</h2>
         <p>
@@ -20,8 +27,11 @@
         </p>
       </div>
     </div>
+
     <div class="card w-42 bg-base-100 shadow-xl">
-      <figure><img src="pirate-character.svg" alt="Pirate" /></figure>
+      <a href="/mypage/create" class="hover:bg-yellow-200">
+        <figure><img src="pirate-character.svg" alt="Pirate" /></figure></a
+      >
       <div class="card-body items-center text-center">
         <h2 class="card-title text-2xl">Pirate</h2>
         <p>
