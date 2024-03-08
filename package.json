@@ -28,7 +28,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"firebase": "^10.8.1",
 		"mysql2": "^3.9.2"
 	}
 }

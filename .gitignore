@@ -19,4 +19,4 @@ vite.config.js.timestamp-*
 .test-tmp
 symlink-from
 .idea/
-/lib/server/secrets.js
+/src/lib/server/secrets.js
