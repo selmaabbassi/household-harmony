@@ -19,4 +19,4 @@ vite.config.js.timestamp-*
 .test-tmp
 symlink-from
 .idea/
-src/lib/server/mysql.js
+/lib/server/secrets.js
