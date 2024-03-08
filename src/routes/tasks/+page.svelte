@@ -28,13 +28,13 @@
                   name="task-difficulty"
                   required
                 >
-                  <option value={DIFFICULTY.Easy.valueOf()} selected
+                  <option value={DIFFICULTY.Easy.label} selected
                     >Easy (1p)</option
                   >
-                  <option value={DIFFICULTY.Medium.valueOf()}
+                  <option value={DIFFICULTY.Medium.label}
                     >Medium (5p)</option
                   >
-                  <option value={DIFFICULTY.Hard.valueOf()}>Hard (10p)</option>
+                  <option value={DIFFICULTY.Hard.label}>Hard (10p)</option>
                 </select>
                 <button class="btn btn-secondary flex w-full"
                   ><Icon icon="mdi:arrow-down"></Icon></button

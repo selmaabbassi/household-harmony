@@ -19,16 +19,39 @@ export async function load() {
     return error;
   }
 }
-/* 
+
+
+
 export const actions = {
   create: async ({ request }) => {
+    let mysqlconn = await mysqlconnFn();
     const data = await request.formData();
-    db.createTask(data.get("task-title"), data.get("task-difficulty"));
+  
+    const taskTitle = data.get("task-title");
+    const difficulty = data.get("task-difficulty");
+  
+    try {
+      let results = await mysqlconn
+      .query('INSERT INTO db.tasks (title, difficulty) VALUES (?, ?)', [taskTitle, difficulty]);
+  
+    } catch(error) {
+      console.log("Error");
+      console.log(error);
+    }
   },
 
   delete: async ({ request }) => {
+    console.log("delete")
+    let mysqlconn = await mysqlconnFn();
     const data = await request.formData();
-    db.deleteTask(data.get("id"));
-  },
+    const taskId = data.get("id");
+    console.log(taskId);
+
+    try {
+      let results = await mysqlconn
+      .query('DELETE from tasks WHERE tasks.id = (?)', [taskId])
+    } catch(error){
+
+    }
+  }
 };
- */

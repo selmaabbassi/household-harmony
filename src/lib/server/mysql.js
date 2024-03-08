@@ -7,7 +7,7 @@ export function mysqlconnFn() {
     mysqlconn = mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "root",
+      password: "password",
       database: "db",
     });
   }

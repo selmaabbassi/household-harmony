@@ -2,7 +2,7 @@
   import Icon from "@iconify/svelte";
 </script>
 
-<div class="navbar bg-neutral">
+<div class="navbar bg-base-300">
   <div class="navbar-start">
     <a class="btn btn-ghost text-xl" href="/"
       ><Icon icon="solar:home-bold" class="big-icon" /></a
