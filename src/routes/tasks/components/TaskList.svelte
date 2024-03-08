@@ -4,11 +4,11 @@
   export let data;
 </script>
 
-{#each data.tasks as task (task.id || task.title)}
+{#each data.tasks as task (task.id || task.data.title)}
   <form method="POST" use:enhance action="?/delete">
     <label class="label cursor-pointer">
       <input type="hidden" name="id" value={task.id} />
-      <span class="label-text">{task.title} - {task.difficulty}</span>
+      <span class="label-text">{task.data.title} - {task.data.difficulty}</span>
       <button class="btn btn-primary btn-sm"
         ><Icon icon="mdi:garbage"></Icon></button
       >

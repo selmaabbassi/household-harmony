@@ -1,4 +1,4 @@
-import { createTask, deleteTask, getTasks } from "$lib/server/mysql";
+import { createTask, deleteTask, getTasks } from "$lib/server/firebase";
 
 export async function load() {
   return getTasks();
