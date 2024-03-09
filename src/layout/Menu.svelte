@@ -5,7 +5,10 @@
 <div class="navbar bg-base-300">
   <div class="navbar-start">
     <a class="btn btn-ghost text-xl" href="/"
-      ><Icon icon="solar:home-bold" class="big-icon" /></a
+      ><Icon icon="solar:home-broken" class="big-icon" /></a
+    >
+    <a class="btn btn-ghost text-xl" href="/login"
+      ><Icon icon="solar:key-broken" class="big-icon" /></a
     >
   </div>
   <div class="navbar-center">
@@ -15,7 +18,7 @@
   </div>
   <div class="navbar-end"></div>
   <a class="btn btn-ghost text-xl" href="/mypage"
-    ><Icon icon="ph:smiley-duotone" class="big-icon" /></a
+    ><Icon icon="solar:face-scan-square-broken" class="big-icon" /></a
   >
 </div>
 
