@@ -7,11 +7,11 @@ export async function load() {
 export const actions = {
   create: async ({ request }) => {
     const data = await request.formData();
-  
+
     const task = {
       title: data.get("task-title"),
-      difficulty: data.get("task-difficulty")
-    }
+      difficulty: data.get("task-difficulty"),
+    };
 
     createTask(task);
   },
@@ -21,5 +21,5 @@ export const actions = {
     const taskId = data.get("id");
 
     deleteTask(taskId);
-  }
+  },
 };
