@@ -4,11 +4,10 @@
   import ManageTask from "./components/ManageTask.svelte";
   import TaskList from "./components/TaskList.svelte";
   import { DIFFICULTY } from "../../enums/DifficultyType";
-  export let data;
 </script>
 
 <div class="container mx-auto mt-10">
-  <div class="grid grid-cols-2 gap-2 content-evenly ...">
+  <div class="grid grid-cols-3 gap-3 content-evenly ...">
     <div class="card w-42 bg-base-100 shadow-xl">
       <figure><img src="create-task.svg" alt="Create task" /></figure>
       <div class="card-body">
@@ -31,9 +30,7 @@
                   <option value={DIFFICULTY.Easy.label} selected
                     >Easy (1p)</option
                   >
-                  <option value={DIFFICULTY.Medium.label}
-                    >Medium (5p)</option
-                  >
+                  <option value={DIFFICULTY.Medium.label}>Medium (5p)</option>
                   <option value={DIFFICULTY.Hard.label}>Hard (10p)</option>
                 </select>
                 <button class="btn btn-secondary flex w-full"
@@ -47,7 +44,6 @@
     </div>
     <ManageTask />
   </div>
-  <TaskList {data} />
 </div>
 
 <style lang="postcss">
