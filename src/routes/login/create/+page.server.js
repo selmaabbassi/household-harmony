@@ -1,5 +1,9 @@
-import { createUser } from "$lib/server/db-login";
-import { createTask, deleteTask, getTasks } from "$lib/server/firebase";
+import {
+  createTask,
+  deleteTask,
+  getTasks,
+  createUser,
+} from "$lib/server/firebase";
 
 export const actions = {
   create: async ({ request }) => {

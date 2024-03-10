@@ -1,6 +1,6 @@
 <script>
-  import TaskList from "../components/TaskList.svelte";
-  import CompleteTasks from "../components/CompleteTasks.svelte";
+  import Tasks from "../components/Tasks.svelte";
+  import CompletedTasks from "../components/CompletedTasks.svelte";
   export let data;
 </script>
 
@@ -8,11 +8,11 @@
   <div class="grid grid-cols-2 gap-3 content-evenly ...">
     <div>
       <h1>Manage tasks</h1>
-      <TaskList {data} />
+      <Tasks {data} />
     </div>
     <div>
       <h1>Completed Tasks</h1>
-      <CompleteTasks {data} />
+      <CompletedTasks {data} />
     </div>
   </div>
 </div>

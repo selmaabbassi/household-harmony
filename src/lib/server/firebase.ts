@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { setDoc } from "firebase/firestore";
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import {
   getFirestore,
   collection,
@@ -27,7 +27,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+export const db = getFirestore(app);
+export const auth = getAuth();
 
 export async function getTasks() {
   const taskCollection = collection(db, "tasks");
@@ -75,4 +76,19 @@ export async function editTask(task) {
     title: task.title,
     difficulty: task.difficulty,
   });
+}
+
+export async function createUser(user) {
+  console.log(user);
+  createUserWithEmailAndPassword(auth, user.email, user.password)
+    .then((userCredential) => {
+      // Signed up
+      const user = userCredential.user;
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+    });
 }

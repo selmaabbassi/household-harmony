@@ -2,7 +2,6 @@
   import Icon from "@iconify/svelte";
   import { enhance } from "$app/forms";
   import ManageTask from "./components/ManageTask.svelte";
-  import TaskList from "./components/TaskList.svelte";
   import { DIFFICULTY } from "../../enums/DifficultyType";
 </script>
 
