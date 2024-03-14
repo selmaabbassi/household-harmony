@@ -3,7 +3,7 @@
 </script>
 
 <form method="POST" use:enhance action="?/create">
-  <div class="mt-80">
+  <div class="mt-40">
     <div class="card w-96 bg-base-100 shadow-xl">
       <div class="card-body">
         <h2 class="card-title mb-2">Sign in</h2>

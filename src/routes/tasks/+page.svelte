@@ -2,7 +2,6 @@
   import Icon from "@iconify/svelte";
   import { enhance } from "$app/forms";
   import ManageTask from "./components/ManageTask.svelte";
-  import TaskList from "./components/TaskList.svelte";
   import { DIFFICULTY } from "../../enums/DifficultyType";
 </script>
 
@@ -33,7 +32,7 @@
                   <option value={DIFFICULTY.Medium.label}>Medium (5p)</option>
                   <option value={DIFFICULTY.Hard.label}>Hard (10p)</option>
                 </select>
-                <button class="btn btn-secondary flex w-full"
+                <button class="btn btn-secondary flex w-full" type="submit"
                   ><Icon icon="mdi:arrow-down"></Icon></button
                 >
               </div>
